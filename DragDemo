@@ -1,0 +1,77 @@
+# Import and initialize the pygame library
+import pygame
+
+pygame.init()
+
+# Set up the drawing window
+screen = pygame.display.set_mode([500, 500])
+pygame.display.set_caption("Demo Test")
+
+# Object rectangle being dragged
+rectangle = pygame.rect.Rect(176, 134, 17, 17)
+rectangle_neighbor = pygame.rect.Rect(160, 134, 17, 17)
+rectangle_dragging = False
+BLACK = (20, 20, 20)
+RED = (255, 0, 0)
+
+# Run until the user asks to quit
+running = True
+while running:
+
+    # GAME EVENTS
+    for event in pygame.event.get():
+        # Default event.type to exit game by closing window
+        if event.type == pygame.QUIT:
+            running = False
+
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            if event.button == 1:  # ensures only right click
+                mouse_pos = pygame.mouse.get_pos()
+                print(mouse_pos)  # test to see mouse click coordinates
+
+                if rectangle.collidepoint(event.pos):
+                    # checks rectangle has been clicked and set drag motion
+                    rectangle_dragging = True
+                    mouse_x, mouse_y = event.pos  # x,y tuple coordinate
+                    offset_x = rectangle.x - mouse_x
+                    offset_y = rectangle.y - mouse_y
+
+                # elif rectangle_neighbor.collidepoint(event.pos):
+                #     # checks rectangle has been clicked and set drag motion
+                #     rectangle_dragging = True
+                #     amouse_x, amouse_y = event.pos  # x,y tuple coordinate
+                #     aoffset_x = rectangle_neighbor.x - amouse_x
+                #     aoffset_y = rectangle_neighbor.y - amouse_y
+
+        # Releases the drag position
+        elif event.type == pygame.MOUSEBUTTONUP:
+            if event.button == 1:
+                rectangle_dragging = False  # stops the drag
+
+        elif event.type == pygame.MOUSEMOTION:
+            # controls rectangle movement
+            if rectangle_dragging:
+                mouse_x, mouse_y = event.pos
+                rectangle.x = mouse_x + offset_x
+                rectangle.y = mouse_y + offset_y
+
+            # elif rectangle_dragging:
+            #     amouse_x, amouse_y = event.pos
+            #     rectangle_neighbor.x = amouse_x + aoffset_x
+            #     rectangle_neighbor.y = amouse_y + aoffset_y
+
+    # Set up graphic to surface
+    # Fill the background with white solid color RBG value
+    screen.fill((255, 255, 255))
+    # Draw a solid blue circle in the center; screen=window to draw, the color, circle center coord, radius of circle
+    pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
+
+    # Draw the rectangle being dragged
+    pygame.draw.rect(screen, BLACK, rectangle)
+    pygame.draw.rect(screen, RED, rectangle_neighbor)
+
+    # What appears on the screen, finalizing it
+    pygame.display.flip()
+
+# Done! Time to quit. Once loop is finished
+pygame.quit()
