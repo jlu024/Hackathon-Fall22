@@ -73,8 +73,8 @@ class GameView:
                     if event.button == 1:  # ensures only right click
                         location = pygame.mouse.get_pos()  # x,y coordinate get integers
                         # truncate the location coordinate as integers
-                        col = location[0] // self.SQ_SIZE_W
-                        row = location[1] // self.SQ_SIZE_H
+                        col = location[0] // self.SQ_SIZE_H
+                        row = location[1] // self.SQ_SIZE_W
                         print(location)  # test to see mouse click coordinates
                         print(row, col)
 
