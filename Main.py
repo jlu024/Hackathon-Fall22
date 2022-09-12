@@ -1,3 +1,4 @@
+import time
 
 import pygame as p
 import DemoEngine
@@ -11,7 +12,7 @@ IMAGES = {}
 
 """Load images"""
 def loadImages():
-    pieces = ['candy','candy2']
+    pieces = ['candy','candy2', 'candy3', 'candy4', 'candy5', 'candy6']
 
     #Mapping each candy piece with its data path graphics path value
     for piece in pieces:
@@ -27,11 +28,19 @@ def main():
     p.display.set_caption("Demo Test")
     screen.fill(p.Color("blue"))
     gs = DemoEngine.GameState()
+    gs.board = gs.randomizeBoard() #arrange the data in board to match image path
+
+    #update = gs.checkBoard()
+
+    #sol = DemoEngine.Solution()
+    #sol.candyCrush()
 
     #validMoves = gs.getValidMoves() #once made move check if valid
     #moveMade = False #check when move actually made
 
     loadImages()
+    #drawGameState(screen, update)
+    #time.sleep(5000)
 
     running = True
     sqSelected = () #track last click of the user (row, col)
@@ -64,6 +73,7 @@ def main():
                     if len(playerClicks) == 2:
                         #engine move the first piece, to second piece location on board
                         #second piece gets nonexistant
+                        #move = DemoEngine.Move(playerClicks[0], playerClicks[1], gs.board)
                         move = DemoEngine.Move(playerClicks[0], playerClicks[1], gs.board)
                         #if move in validMoves:
                         gs.makeMove(move)
@@ -106,8 +116,10 @@ def drawPieces(screen, board):
                 #testing = IMAGES[piece]
                 #testing = random.choice(list(IMAGES.values()))
                 screen.blit(IMAGES[piece], p.Rect(c*SQ_SIZE, r*SQ_SIZE, SQ_SIZE, SQ_SIZE))
+                #screen.blit(random.choice(list(IMAGES_TEST.values())), p.Rect(c * SQ_SIZE, r * SQ_SIZE, SQ_SIZE, SQ_SIZE))
 
                 #screen.blit((testing), p.Rect(c * SQ_SIZE, r * SQ_SIZE, SQ_SIZE, SQ_SIZE))
 
 if __name__ == "__main__":
-    main()J
+    main()
+
