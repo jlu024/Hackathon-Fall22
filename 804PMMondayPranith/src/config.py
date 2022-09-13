@@ -9,7 +9,7 @@ CONFIG_DATA = {
                 'item05': 1,
                 'item06': 1,
             },
-            'completionCriteria': 20,
+            'completionCriteria': 60,
             'turns': 15,
     },
     'Regular-2': {
@@ -22,26 +22,9 @@ CONFIG_DATA = {
                         'item05': 1,
                         'item06': 1,
                     },
-                    'completionCriteria': 20,
+                    'completionCriteria': 70,
                     'turns': 10,
     },
-    'Fruit-1': {
-                'boardSize': [5, 5],
-                'candyFreq': {
-                    'red': 1,
-                    'yellow': 1,
-                    'green': 3,
-                    'blue': 5
-                },
-                'completionCriteria': {
-                    'red': 0,
-                    'yellow': 0,
-                    'green': 0,
-                    'blue': 0,
-                    'fruit': 2,
-                },
-                'turns': 20,
-        }
 }
 
 GAME_MODE = 1
