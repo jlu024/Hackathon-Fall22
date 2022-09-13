@@ -115,3 +115,19 @@ If desired, add a section for your license. Reference sites like https://choosea
 
 No license needed!
 
+### Project Story
+## Inspiration
+The idea of Treasure Crush game arise from our first group meeting. Although it's our first time working together, we all have high expectations on our project. Since we all love Python and playing games, we decided to make a Python game together. 
+## What it does
+Treasure Crush is inspired by the iconic game Candy Crush, where the player needs to crush the specified number of gems to win the game. Explore three levels each with different board dimensions as you break through precious gems by matching at least three consecutive gems. Play to crush the number of gems before your turns run out!
+## How we built it
+The running of the Treasure Crush game requires the Python environment. It uses Python packages including pygame. And the development of the Treasure Crush game are boosted with Github. After we decided what we need to do, all three members of us start coding our part of the project. For example, we need to design the game view, the game logic, the winning criteria, etc. And then all pieces of work are joined together to make the Treasure Crush game. We also spent a lot of time on debugging and tuning the game so to make it better.
+## Challenges we ran into
+One of the biggest challenges we met I believe is the game algorithm that controls the gems. Since the game is quite different type of program from some other Python programs that a game has a dynamic view. Every time the user clicked the mouse, we need to update the view. With nested loops sometimes it's hard to fully control the flow of variables.
+## Accomplishments that we're proud of
+Finally we have the game running! It runs just as what we expected and we have a lot of fun playing it. It has several levels with increasing difficulty.
+## What we learned
+Team working is the most important thing during the project.  Now we are all better team workers. Also our python skills are definitely improved. Also our communicating skills and time management skills are practiced during the project.
+## What's next for Treasure Crush
+We are gonna keep polishing the game so that it becomes a even more better game. We also want to add different gaming rules to it. Further plans including transporting the game to a web environment so it does not rely on Python environment so it can be played anywhere. Even more fun to come!
+
