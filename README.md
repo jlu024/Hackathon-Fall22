@@ -1,5 +1,4 @@
-# Project Title: 
-Treasure Crush
+# Project: Treasure Crush
 
 ## Overview
 
@@ -11,15 +10,15 @@ Include the link to your Devpost project page here: [Devpost](https://...)
 
 Treasure Crush is inspired by the iconic game Candy Crush, where the player has to crush the specified number of gems to win the game. Explore three levels each with different board dimensions as you break through precious gems by matching at least three consecutive gems. Play to crush the number of gems before your turns run out! 
 
-### Authors Jenn: what is a devpost haha
+### Authors
 
 * **Name** - Devpost ID – Penn email – [GitHub](https://github.com/user_name)
 * **Name** - Devpost ID – Penn email – [GitHub](https://github.com/user_name)
 * **Name** - Devpost ID – Penn email – [GitHub](https://github.com/user_name)
 
-Jennifer Lu – jlu024@seas.upenn.edu – https://github.com/jlu024
-Pranith Lomada – plomada@seas.upenn.edu – https://github.com/ThePlom
-Zhixiang Huang – huangzhx@seas.upenn.edu – https://github.com/hzx365
+* **Jennifer Lu** – jlu024@seas.upenn.edu – https://github.com/jlu024
+* **Pranith Lomada** – plomada@seas.upenn.edu – https://github.com/ThePlom
+* **Zhixiang Huang** – huangzhx@seas.upenn.edu – https://github.com/hzx365
 
 ## Usage
 
@@ -30,9 +29,10 @@ This section walks a prospective user through the process of installing and runn
 What prerequisites must be installed in order to run your project, and how do you install them?
 
 ```
-Provide code samples in this fenced code block: Prerequisite: Be sure to install py_game and py-menu. Be aware that the pip-statement spelling is different from its import statement. 
+Prerequisite: Be sure to install py_game and py-menu. Be aware that the pip-statement spelling is different from its import statement. 
 
 $> pip install pygame-menu -U
+
 import pygame
 import pygame_menu
 
@@ -55,7 +55,8 @@ Provide code samples in this fenced code block.
 Etc.
 
 ```
-The beauty of this game lies in its simplicity as you only need to download the zip file and its two libraries to enjoy the destruction of luxury items.
+The beauty of this game lies in its simplicity! 
+You only need to download the zip file and its two libraries to enjoy the destruction of luxury items.
 
 ```
 
@@ -63,21 +64,28 @@ The beauty of this game lies in its simplicity as you only need to download the 
 
 Give a step-by-step rundown of how to **use** your project. Including screenshots in this section can be highly effective for highlighting specific features of your project.
 
-Github MAKEFILE images connected with path to github rep images? Oh well, basic rundown: Enjoy the AI generated background country music when you first see the start menu. Choose your level (1-3) with the board dimensions (), (),  with an increasing number of gems to crush.
+Enjoy the AI generated background 8-bit music when you first see the start menu. Choose your level (1-3) with the board dimensions (), (),  with an increasing number of gems to crush.
 Your goal is to match at least three gems horizontally or vertically to crush the gems. Use your mouse to click on the two gems you want to swap; note swaps can only be made with the gem immediate to its left, right, top, or bottom, else the move is considered invalid. If you don’t like the first candy you chose, click on it again to deselect the initial candy and choose another candy.
 Each valid move will reduce your turn’s counter. Watch your score soar, but be sure to complete the objective before your turns = 0, then it’s Game Over! Have fun playing.
 
-State step 1.
+Step 1.
 ```
-Provide code samples in this fenced code block.
-```
-
-State step 2.
-```
-Provide code samples in this fenced code block.
+Enjoy the AI generated background 8-bit music when you first see the start menu. 
+Choose your level (1-3) with the board dimensions (), (),  with an increasing number of gems to crush.
 ```
 
-Etc.
+Step 2.
+```
+Your goal is to match at least three gems horizontally or vertically to crush the gems. 
+Use your mouse to click on the two gems you want to swap; note swaps can only be made with the gem immediate to its left, right, top, or bottom, else the move is considered invalid. 
+If you don’t like the first candy you chose, click on it again to deselect the initial candy and choose another candy.
+```
+Step 3.
+```
+Each valid move will reduce your turn’s counter. 
+Watch your score soar, but be sure to complete the objective before your turns = 0, then it’s Game Over! 
+Have fun playing.
+```
 
 ## Additional information
 
@@ -85,7 +93,7 @@ Etc.
 
 Which frameworks, libraries, or other tools did you use to create your project?
 
-* [Tool 1](https://maven.apache.org/) - Description (e.g. "Web framework used")
+* [Tool 1](https://pygame-menu.readthedocs.io/en/4.2.8/) - Description: Pygame Library for convenient menu basics.
 * [Tool 2](https://maven.apache.org/) - Description
 * [Tool 3](https://maven.apache.org/) - Description
 
@@ -104,4 +112,6 @@ If desired, add a section for your license. Reference sites like https://choosea
 *For example:*
 
 >This package is licensed under the GNU General Public License v3.0 (<a href="https://choosealicense.com/licenses/gpl-3.0/" target="_blank">GPL-3</a>).
+
+No license needed!
 
