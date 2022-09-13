@@ -9,7 +9,7 @@ Please provide a short (one paragraph) summary of your project. Consider this yo
 
 Include the link to your Devpost project page here: [Devpost](https://...)
 
-Treasure Crush is based on the iconic game Candy Crush, where the player has to crush the specified number of gems to win the game. Explore three levels each with different board dimensions as you break through precious gems by matching at least three consecutive gems. Play to crush the number of gems before your turns run out! 
+Treasure Crush is inspired by the iconic game Candy Crush, where the player has to crush the specified number of gems to win the game. Explore three levels each with different board dimensions as you break through precious gems by matching at least three consecutive gems. Play to crush the number of gems before your turns run out! 
 
 ### Authors Jenn: what is a devpost haha
 
