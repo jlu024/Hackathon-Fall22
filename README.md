@@ -64,7 +64,7 @@ You only need to download the zip file and its two libraries to enjoy the destru
 
 Give a step-by-step rundown of how to **use** your project. Including screenshots in this section can be highly effective for highlighting specific features of your project.
 
-Enjoy the AI generated background 8-bit music when you first see the start menu. Choose your level (1-3) with the board dimensions (), (),  with an increasing number of gems to crush.
+Enjoy the AI generated 8-bit background music when you first see the start menu. Choose your level (1-3) with the board dimensions (), (),  with an increasing number of gems to crush.
 Your goal is to match at least three gems horizontally or vertically to crush the gems. Use your mouse to click on the two gems you want to swap; note swaps can only be made with the gem immediate to its left, right, top, or bottom, else the move is considered invalid. If you don’t like the first gem you chose, click on it again to deselect the initial gem and choose another gem .
 Each valid move will reduce your turn’s counter. Watch your score soar, but be sure to complete the objective before your turns = 0, then it’s Game Over! Have fun playing.
 
