@@ -13,7 +13,7 @@ Include the link to your Devpost project page here: [Devpost](https://...)
 ### Authors
 
 * **Jennifer Lu** - jlu024 – jlu024@seas.upenn.edu – https://github.com/jlu024
-* **Pranith Lomada** – plomada@seas.upenn.edu – https://github.com/ThePlom
+* **Pranith Lomada** – plomada – plomada@seas.upenn.edu – https://github.com/ThePlom
 * **Zhixiang Huang** -hzx365 – huangzhx@seas.upenn.edu – https://github.com/hzx365
 
 ## Usage
